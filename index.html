@@ -1,0 +1,264 @@
+<!-- particles.js container -->
+<div id="particles-js"></div>
+<div class="center">
+</div>
+<div class="menu" style="display:none">
+    <a href="https://github.com/lintume" class="instance">
+    GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/lialia-sakhno-114436b8" class="instance">
+      LinkedIn
+    </a>
+    <a href="https://vue-laravel.blogspot.com" class="instance">
+      Blog
+    </a>
+</div>
+<div class="icons" style="display:none">
+    <img class="instance-icons" src="laravel.png" style="filter: invert(100%); margin: -3px 0px -2px -2px;">
+    <img class="instance-icons" src="vue.png">
+    <img class="instance-icons" src="symfony.png">
+</div>
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+
+<style>
+  body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    position: relative;
+  }
+
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+
+  /* ---- particles.js container ---- */
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 60px;
+    max-width: 800px;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 140%;
+    font-family: "Verdana";
+
+  }
+
+  .menu {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 20px 40px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 140%;
+    font-family: "Verdana";
+    font-size: 30px;
+
+  }
+  .icons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px 40px;
+    margin: auto;
+    text-align: center;
+  }
+
+  @media (max-width: 400px) {
+    .center {
+      width: 300px;
+    }
+  }
+
+    @media (max-width: 1071px) {
+    .menu {
+      width: 200px;
+    }
+  }
+
+  .instance {
+    float: left;
+    display: block;
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .instance-icons {
+    float: left;
+    display: block;
+    margin: 0px 5px 0px 5px;
+    color: #fff;
+    text-decoration: none;
+    filter: grayscale(100%); 
+  }
+
+  .instance-icons:hover {
+    filter: grayscale(0%); 
+  }
+
+  /*@media (max-width: 960px) {
+    .center {
+        width: 200px;
+    }*/
+
+  }
+</style>
+
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 33,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "grab"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+ 
+  $('.center').typeIt({
+      speed: 120,
+      autoStart: false,
+      callback: function() {
+        $(".menu").show(2000);
+        $(".icons").show(2000);
+      },
+      cursor:false
+    })
+    .tiType("<div style='background: rgba(255, 255, 255, 0.5);'>Pariamonia</div>")
+    .tiPause(750)
+    .tiType("<div style='font-size: 55px;'>Space</div>");
+
+
+</script>
