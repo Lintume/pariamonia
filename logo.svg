@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="160mm" height="160mm"
+     version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision;
+                 image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+     viewBox="0 0 16000 16000"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="667" font-variant="normal" style="fill-rule:nonzero" font-style="normal"
+        font-weight="400">
+	<font-face
+            font-family="Arial">
+		<font-face-src>
+			<font-face-name name="Arial"/>
+		</font-face-src>
+	</font-face>
+      <missing-glyph><path d="M0 0z"/></missing-glyph>
+      <glyph unicode="L" horiz-adv-x="556" d="M72.9994 0l0 716.001 95.0006 0 0 -632 351.999 0 0 -84.0008 -447 0z"/>
+  </font>
+     <style type="text/css">
+   <![CDATA[
+   @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0")
+   format(svg)}
+   .str1 {stroke:#F2AC78;stroke-width:500;stroke-miterlimit:22.9256}
+   .str0 {stroke:#F2AC78;stroke-width:1000;stroke-miterlimit:22.9256}
+   .fil0 {fill:none}
+   .fil1 {fill:#F2AC78}
+   .fnt0 {font-weight:normal;font-size:5906.49px;font-family:'Arial'}
+   ]]>
+  </style>
+ </defs>
+    <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+        <g id="_2076310299632">
+   <rect class="fil0 str0" x="484.24" y="440.76" width="15000" height="15000"/>
+            <line class="fil0 str1" x1="12631.79" y1="4320.76" x2="4728.66" y2= "12223.87" />
+            <text x="9674.2" y="12641.56"  class="fil1 fnt0">L</text>
+            <g id="_1851781321824">
+    <path class="fil0 str1" d="M6759.33 7382.34c-2.38,1.79 -4.76,3.58 -7.14,5.37m-1137.08 537.38c-239.45,58.33
+    -489.64,89.27 -747.06,89.27 -1736.85,0 -3144.87,-1408.01 -3144.87,-3144.88 0,-1736.87 1408.02,-3144.88
+    3144.87,-3144.88 1736.87,0 3144.88,1408.01 3144.88,3144.88 0,271.4 -34.38,534.77 -99.02,786"/>
+                <line class="fil0 str1" x1="1723.18" y1="4869.48" x2="8012.93" y2= "4869.48" />
+                <line class="fil0 str1" x1="2038.33" y1="3495.67" x2="7705.63" y2= "3495.67" />
+                <line class="fil0 str1" x1="2009.4" y1="6182.17" x2="4802.49" y2= "6182.17" />
+                <polyline class="fil0 str1" points="4868.05,1724.6 3996.2,3495.67 3874.94,4869.48
+                            4000.79,6182.17 4868.05,8014.36 "/>
+                <path class="fil0 str1" d="M4868.05 8014.36l410.49 -833.85m564.8 -2108.96l17.84
+                            -202.07 -125.87 -1312.69 -867.26 -1832.19"/>
+                <polyline class="fil0 str1" points="7313.42,6831.71 7822.71,6315.35 5498.2,5580.4
+                            6348.81,7809.72 6795.86,7356.47 "/>
+                <polyline class="fil0 str1" points="6795.86,7356.47 7669.98,8020.11 8105.93,7470.16
+                            7313.42,6831.71 "/>
+   </g>
+  </g>
+ </g>
+</svg>
