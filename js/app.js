@@ -121,3 +121,16 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+    let x = document.getElementById("dAwNpJ");
+    const main = document.querySelector('main');
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        main.style.filter = 'none';
+    } else {
+        x.style.display = "block";
+        main.style.cssText += 'filter: blur(5px) brightness(0.7);';
+    }
+}

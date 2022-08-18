@@ -23,6 +23,23 @@
     <meta property="og:image" content="https://brittanychiang.com/og.png" data-react-helmet="true">
     <meta property="og:url" content="https://pariamonia.in.ua" data-react-helmet="true">
     <meta property="og:type" content="website" data-react-helmet="true">
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYW43DSJXB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-FYW43DSJXB');
+    </script>
 </head>
 <body>
 <header id="navbar" class="nav__StyledHeader-ghklvd-0 hLTFFw">
@@ -36,42 +53,74 @@
                     <div style="color: #B46848">01.&nbsp;</div>
                     About</a>
                 </li>
-                <li class="fadedown-enter-done" style="transition-delay: 100ms;"><a href="/#about" style="display: flex">
+                <li class="fadedown-enter-done" style="transition-delay: 100ms;"><a href="/#about"
+                                                                                    style="display: flex">
                     <div style="color: #B46848">02.&nbsp;</div>
                     Experience</a>
                 </li>
-                <li class="fadedown-enter-done" style="transition-delay: 200ms;"><a href="/#about" style="display: flex">
+                <li class="fadedown-enter-done" style="transition-delay: 200ms;"><a href="/#about"
+                                                                                    style="display: flex">
                     <div style="color: #B46848">03.&nbsp;</div>
                     Work</a></li>
-                <li class="fadedown-enter-done" style="transition-delay: 200ms;"><a href="/#about" style="display: flex">
+                <li class="fadedown-enter-done" style="transition-delay: 200ms;"><a href="/#about"
+                                                                                    style="display: flex">
                     <div style="color: #B46848">04.&nbsp;</div>
                     Blog</a></li>
-                <li class="fadedown-enter-done" style="transition-delay: 300ms;"><a href="/#about" style="display: flex">
+                <li class="fadedown-enter-done" style="transition-delay: 300ms;"><a href="/#about"
+                                                                                    style="display: flex">
                     <div style="color: #B46848">05.&nbsp;</div>
                     Contact</a>
                 </li>
             </ol>
             <div class="fadedown-enter-done" style="transition-delay: 400ms;"><a class="resume-button"
-                                                                                 href="Lialia Sakhno, Full Stack Developer - CV.pdf" target="_blank"
+                                                                                 href="Lialia Sakhno, Full Stack Developer - CV.pdf"
+                                                                                 target="_blank"
                                                                                  rel="noopener noreferrer">Resume</a>
             </div>
         </div>
-        <div class="menu__StyledMenu-sdn9y6-0 dAwNpJ fade-enter-done">
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="menu__StyledMenu-sdn9y6-0 dAwNpJ fade-enter-done" id="dAwNpJ">
             <div>
-                <button aria-label="Menu" class="menu__StyledHamburgerButton-sdn9y6-1 eCxtrN">
-                    <div class="ham-box">
-                        <div class="ham-box-inner"></div>
-                    </div>
-                </button>
-                <aside aria-hidden="true" tabindex="-1" class="menu__StyledSidebar-sdn9y6-2 dKogfI">
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a style="    color: rgb(23, 90, 108);
+    z-index: 99;" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <aside aria-hidden="false" tabindex="1" class="menu__StyledSidebar-sdn9y6-2 dSbVSd">
                     <nav>
                         <ol>
-                            <li><a href="/#about">About</a></li>
-                            <li><a href="/#jobs">Experience</a></li>
-                            <li><a href="/#projects">Work</a></li>
-                            <li><a href="/#contact">Contact</a></li>
+                            <li class="fadedown-enter-done" style="transition-delay: 0ms;"><a href="/#about" style="display: flex">
+                                <div style="color: #B46848">01.&nbsp;</div>
+                                About</a>
+                            </li>
+                            <li class="fadedown-enter-done" style="transition-delay: 100ms;"><a href="/#about"
+                                                                                                style="display: flex">
+                                <div style="color: #B46848">02.&nbsp;</div>
+                                Experience</a>
+                            </li>
+                            <li class="fadedown-enter-done" style="transition-delay: 200ms;"><a href="/#about"
+                                                                                                style="display: flex">
+                                <div style="color: #B46848">03.&nbsp;</div>
+                                Work</a></li>
+                            <li class="fadedown-enter-done" style="transition-delay: 200ms;"><a href="/#about"
+                                                                                                style="display: flex">
+                                <div style="color: #B46848">04.&nbsp;</div>
+                                Blog</a></li>
+                            <li class="fadedown-enter-done" style="transition-delay: 300ms;"><a href="/#about"
+                                                                                                style="display: flex">
+                                <div style="color: #B46848">05.&nbsp;</div>
+                                Contact</a>
+                            </li>
                         </ol>
-                        <a href="/resume.pdf" class="resume-link">Resume</a></nav>
+                        <div class="fadedown-enter-done" style="transition-delay: 400ms;"><a class="resume-link"
+                                                                                             href="Lialia Sakhno, Full Stack Developer - CV.pdf"
+                                                                                             target="_blank"
+                                                                                             rel="noopener noreferrer">Resume</a>
+                        </div>
+                    </nav>
                 </aside>
             </div>
         </div>
@@ -83,7 +132,8 @@
         <div style='z-index: 10; font-size: 20px; color: 	#B46848; margin-bottom: 10px'>Hi, my name is</div>
         <div style='z-index: 10; font-weight: bold;  color: #F2AC78; font-size: 2em'>Lialia Sakhno.</div>
         <div style='z-index: 10; font-weight: bold;  color: #E3AB7B; font-size: 2em'>I build web applications.</div>
-        <div style='z-index: 10; line-height: 120%; margin-top: 11px;  max-width: 600px;  font-size: 20px; color: #B57466'>I’m a
+        <div style='z-index: 10; line-height: 120%; margin-top: 11px;  max-width: 600px;  font-size: 20px; color: #B57466'>
+            I’m a
             Full-Stack software engineer specializing in building exceptional digital experiences.
         </div>
     </div>
@@ -137,15 +187,6 @@
     <div style="margin-left: 39px;" class="vl"></div>
 </div>
 <link rel="stylesheet" href="css/app.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FYW43DSJXB"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-FYW43DSJXB');
-</script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 <script src="js/app.js"></script>
