@@ -418,9 +418,9 @@ svg.feather {
 
 a.icon {
     position: absolute;
-    right: 11px;
-    font-size: 8vh;
-    top: 25px;
+    right: 8px;
+    font-size: 60px;
+    top: 23px;
     display: none;
 }
 
