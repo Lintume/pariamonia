@@ -1031,11 +1031,18 @@ p:last-child, p:last-of-type {
 .eeeRej:nth-of-type(2n+1) .project-image {
     grid-column: 1 / 8;
     background-size: cover;
+}
+
+.project-image.alicedreads {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../portfolio/aliceDreads.png');
 }
 
 .project-image.smap {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../portfolio/smap.png');
+}
+
+.project-image.medsnow {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../portfolio/medsnow.png');
 }
 
 @media (max-width: 768px) {
