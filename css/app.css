@@ -173,7 +173,11 @@ main {
         padding: 10px;
     }
 
-    .side__StyledSideElement-sc-1duznzb-0 {
+    .hOvuuP {
+        display: none;
+    }
+
+    .jSIwrL {
         display: none;
     }
 }
@@ -711,6 +715,10 @@ p {
     grid-template-columns: repeat(12, 1fr);
     -webkit-box-align: center;
     align-items: center;
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
 @media (max-width: 480px) {
@@ -1137,7 +1145,10 @@ img, svg, .gatsby-image-wrapper {
     display: flex;
     position: relative;
     cursor: default;
-    transition: var(--transition);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
 
 .dIMCBf .project-inner {
@@ -1297,6 +1308,10 @@ a:hover, a:focus {
     max-width: 600px;
     margin: 0px auto 100px;
     text-align: center;
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
 }
 
 .eXnPVF .overline {
@@ -1457,3 +1472,49 @@ a:hover, a:focus {
     color: #B46848
 }
 
+.display-contents {
+    display: contents;
+}
+
+.jdfosx {
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+}
+
+.many-more {
+    text-align: center;
+    margin-top: -80px;
+    font-size: 26px;
+}
+
+.cMhhGM h2 {
+    font-size: 35px;
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+}
+
+.inline-link.archive-link {
+    font-size: 20px;
+    color: #B46848;
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+}
+
+.new-opp {
+    color: #E3AB7B;
+    font-size: 15px;
+}
+
+.linkedin {
+    margin-bottom: 20px;
+}
+
+.right-panel {
+    margin-left: 39px;
+}
