@@ -1364,3 +1364,76 @@ a:hover, a:focus {
         margin-right: 5px;
     }
 }
+.earxGk {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 70px;
+    padding: 15px;
+    text-align: center;
+    color: #F2AC78;
+}
+.iKeBGp {
+    display: none;
+}
+@media (max-width: 768px) {
+    .iKeBGp {
+        display: block;
+        width: 100%;
+        max-width: 154px;
+        margin: 0px auto 10px;
+        color: var(--light-slate);
+    }
+}
+
+.iKeBGp ul {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.iKeBGp ul a {
+    padding: 10px;
+}
+
+.fLSMpu {
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.fLSMpu a {
+    padding: 10px;
+}
+
+.fLSMpu .github-stats {
+    margin-top: 10px;
+}
+
+.fLSMpu .github-stats > span {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px 7px;
+}
+
+.fLSMpu .github-stats svg {
+    display: inline-block;
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+}
+
+ .iKeBGp ul a svg {
+     width: 20px;
+     height: 20px;
+ }
