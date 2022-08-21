@@ -1,11 +1,11 @@
-
-#logo {
-    color: #F2AC78;
+body {
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --main-color: #F2AC78;
 }
 
 .kFCHyX .logo a img {
     fill: none;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: var(--transition);
     user-select: none;
 }
 
@@ -39,7 +39,7 @@ svg {
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: var(--transition);
     margin-left: 15px;
 }
 
@@ -90,7 +90,7 @@ main {
     width: 93%;
     height: 100px;
     backdrop-filter: blur(10px);
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: var(--transition);
     filter: none !important;
     pointer-events: auto !important;
     user-select: auto !important;
@@ -212,7 +212,6 @@ main {
 }
 
 .dSbVSd ol a {
-    display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
     color: inherit;
@@ -228,7 +227,7 @@ main {
     line-height: 2;
     text-decoration: none;
     cursor: pointer;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: var(--transition);
     padding: 6px 17px;
     margin: 1% auto 40px -60px;
 }
@@ -256,15 +255,8 @@ a {
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: var(--transition);
 }
-
-/*.logo {*/
-/*    position: absolute;*/
-/*    width: 80px;*/
-/*    padding-left: 46px;*/
-/*    padding-top: 26px;*/
-/*}*/
 
 .vl {
     border-left: 9px solid #F2AC78;
@@ -277,6 +269,7 @@ body {
     position: relative;
     -webkit-font-smoothing: antialiased;
     background-color: rgb(23, 90, 108);
+    color: #F2AC78;
 }
 
 canvas {
@@ -311,53 +304,10 @@ canvas {
     padding: 0px;
 }
 
-.menu {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    margin: auto;
-    text-align: center;
-    letter-spacing: 2px;
-    line-height: 140%;
-    font-family: "Verdana";
-    font-size: 30px;
-
-}
-
 @media (max-width: 400px) {
     .center {
         width: 300px;
     }
-}
-
-@media (max-width: 1071px) {
-    .menu {
-        width: 200px;
-    }
-}
-
-.instance {
-    float: left;
-    display: block;
-    margin: 20px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.instance-icons {
-    float: left;
-    display: block;
-    margin: 0px 5px 0px 5px;
-    color: #fff;
-    text-decoration: none;
-    filter: grayscale(100%);
-}
-
-.instance-icons:hover {
-    filter: grayscale(0%);
 }
 
 .hOvuuP {
@@ -395,7 +345,7 @@ svg.feather {
 
 .dVLQAC li {
     padding: 10px;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: var(--transition);
 }
 
 @media (max-width: 1080px) {
@@ -422,6 +372,11 @@ a.icon {
     font-size: 60px;
     top: 23px;
     display: none;
+}
+
+a.icon.reverse {
+    color: rgb(23, 90, 108);
+    z-index: 99;
 }
 
 @media (max-width: 768px) {
@@ -478,13 +433,17 @@ a.icon {
         z-index: 9;
         transform: translateX(0vw);
         visibility: visible;
-        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: var(--transition);
         font-size: 3vh;
     }
 }
 
 .bNXWUU {
     max-width: 900px;
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
 }
 
 section {
@@ -579,7 +538,7 @@ p {
 
 .iTdkQf .wrapper {
     box-shadow: 0 10px 30px -15px black;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: var(--transition);
     display: block;
     position: relative;
     width: 100%;
@@ -592,7 +551,7 @@ p {
     border-radius: 4px;
     mix-blend-mode: multiply;
     /*filter: grayscale(100%) contrast(1);*/
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: var(--transition);
 }
 
 .gatsby-image-wrapper-constrained {
@@ -610,6 +569,17 @@ p {
     top: 0;
     width: 100%;
     object-fit: cover;
+}
+
+.numbered-heading::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 1px;
+    width: 300px;
+    height: 4px;
+    margin-left: 20px;
+    background-color: #E3AB7B;
 }
 
 @media (max-width: 600px) {
@@ -887,7 +857,7 @@ p {
 
 .eeeRej .project-description {
     box-shadow: 0 10px 30px -15px black;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: var(--transition);
     position: relative;
     z-index: 2;
     padding: 25px;
@@ -1250,10 +1220,12 @@ img, svg, .gatsby-image-wrapper {
 a:hover, a:focus {
     color: white;
 }
+
 .dIMCBf a {
     position: relative;
     z-index: 1;
 }
+
 .dIMCBf .project-title a::before {
     content: "";
     display: block;
@@ -1284,10 +1256,10 @@ a:hover, a:focus {
 }
 
 
- .dIMCBf .project-top .project-links a svg {
-     width: 20px;
-     height: 20px;
- }
+.dIMCBf .project-top .project-links a svg {
+    width: 20px;
+    height: 20px;
+}
 
 .cMhhGM {
     display: flex;
@@ -1314,6 +1286,7 @@ a:hover, a:focus {
 .dIMCBf .project-tech-list li:not(:last-of-type) {
     margin-right: 15px;
 }
+
 .dIMCBf .project-tech-list li {
     font-family: var(--font-mono);
     font-size: var(--fz-xxs);
@@ -1332,6 +1305,7 @@ a:hover, a:focus {
     font-size: 18px;
     font-weight: 400;
     color: #B46848;
+    letter-spacing: 2px;
 }
 
 .eXnPVF .title {
@@ -1364,6 +1338,7 @@ a:hover, a:focus {
         margin-right: 5px;
     }
 }
+
 .earxGk {
     display: flex;
     -webkit-box-pack: center;
@@ -1377,9 +1352,11 @@ a:hover, a:focus {
     text-align: center;
     color: #F2AC78;
 }
+
 .iKeBGp {
     display: none;
 }
+
 @media (max-width: 768px) {
     .iKeBGp {
         display: block;
@@ -1433,7 +1410,50 @@ a:hover, a:focus {
     height: 14px;
 }
 
- .iKeBGp ul a svg {
-     width: 20px;
-     height: 20px;
- }
+.iKeBGp ul a svg {
+    width: 20px;
+    height: 20px;
+}
+
+.fadedown-enter-done a {
+    display: flex;
+}
+
+.fadedown-enter-done a div {
+    color: #B46848
+}
+
+.title-hi {
+    z-index: 10;
+    font-size: 20px;
+    color: #B46848;
+    margin-bottom: 10px
+}
+
+.title-name {
+    z-index: 10;
+    font-weight: bold;
+    color: #F2AC78;
+    font-size: 2em
+}
+
+.what-i-do {
+    z-index: 10;
+    font-weight: bold;
+    color: #E3AB7B;
+    font-size: 2em
+}
+
+.title-desc {
+    z-index: 10;
+    line-height: 120%;
+    margin-top: 11px;
+    max-width: 600px;
+    font-size: 20px;
+    color: #B57466
+}
+
+.second-color {
+    color: #B46848
+}
+
