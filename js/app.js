@@ -138,6 +138,9 @@ function myFunction() {
 $(window).on('load', function () {
     // setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
     removeLoader()
+    if (location.hash) {
+        window.location.replace(location.hash);
+    }
 });
 
 function removeLoader() {
