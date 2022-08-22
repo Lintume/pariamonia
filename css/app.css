@@ -1471,6 +1471,8 @@ a:hover, a:focus {
 }
 
 .inline-link.archive-link {
+    padding-top: 10px;
+    font-weight: 600;
     font-size: 20px;
     color: var(--second-darker);
     visibility: visible;
