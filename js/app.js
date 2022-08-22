@@ -134,3 +134,15 @@ function myFunction() {
         main.style.cssText += 'filter: blur(5px) brightness(0.7);';
     }
 }
+
+$(window).on('load', function () {
+    // setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+    removeLoader()
+});
+
+function removeLoader() {
+    $("#spinner").fadeOut(500, function () {
+        // fadeOut complete. Remove the loading div
+        $("#spinner").remove(); //makes page more lightweight
+    });
+}

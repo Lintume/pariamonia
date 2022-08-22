@@ -246,7 +246,6 @@ main {
     margin-right: -8px;
     padding: 39px;
     letter-spacing: 4px;
-    font-family: "Verdana";
     font-size: 19px;
     writing-mode: vertical-rl;
 }
@@ -1492,3 +1491,23 @@ a:hover, a:focus {
 .right-panel {
     margin-left: 39px;
 }
+
+/* (A) FULL SCREEN WRAPPER */
+#spinner {
+    position: fixed;
+    top: 0; left: 0; z-index: 9999;
+    width: 100vw; height: 100vh;
+    background: var(--background-color);
+    transition: opacity 0.2s;
+}
+
+/* (B) CENTER LOADING SPINNER */
+#spinner img {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 150px;
+    animation: blinker 1s linear infinite;
+}
+
