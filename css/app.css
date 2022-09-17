@@ -635,7 +635,6 @@ p {
     cursor: pointer;
     transition: background 0.1s, color 0.1s;
     letter-spacing: 2px;
-    font-size: 2vh;
 }
 
 .label:active {
